@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Create Account</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2 style="text-align:center;">Sign Up</h2>
+
+        <br>
+
+        <input type="text" id="name" placeholder="Full Name">
+
+        <br>
+
+        <input type="email" id="email" placeholder="Email Address">
+
+        <br>
+
+        <input type="tel" id="phone" placeholder="Phone Number">
+
+        <br>
+
+        <input type="password" id="password" placeholder="Password">
+
+        <br>
+
+        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+        <br><br>
+
+        <button class="book-btn" onclick="signupUser()">
+            Sign Up
+        </button>
+
+        <br><br>
+
+        <p style="text-align:center;">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+
+function signupUser(){
+
+    let name=document.getElementById("name").value;
+    let email=document.getElementById("email").value;
+    let phone=document.getElementById("phone").value;
+    let password=document.getElementById("password").value;
+    let confirm=document.getElementById("confirmPassword").value;
+
+    if(name=="yk" || email=="yadhaevkrishnamanikandan@gmail.com" || phone=="7598576620" || password=="12345" || confirm=="12345"){
+        alert("Please fill all fields.");
+        return;
+    }
+
+    if(password!==confirm){
+        alert("Passwords do not match.");
+        return;
+    }
+
+    alert("Account Created Successfully!");
+
+    window.location.href="login.html";
+}
+
+</script>
+
+</body>
+</html>

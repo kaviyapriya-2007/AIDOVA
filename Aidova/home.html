@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ambulance Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <h1>Ambulance Booking</h1>
+
+</header>
+
+<div class="container">
+
+    <!-- Booking Card -->
+
+    <div class="card">
+
+        <div class="booking-top">
+
+            <div class="icon-circle">
+
+                <i class="fa-solid fa-truck-medical"></i>
+
+            </div>
+
+            <div class="booking-text">
+
+                <h2>Ambulance Booking</h2>
+
+                <p>
+                    Get emergency ambulance quickly —
+                    nearest team will be dispatched.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="booking-bottom">
+
+            <button type="button" class="book-btn" onclick="window.location='ambulance.html';">
+              Book Ambulance
+            </button>
+
+
+            <button class="track-btn">
+
+                <i class="fa-solid fa-location-crosshairs"></i>
+
+                Track
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Appointment -->
+
+    <div class="card appointment">
+
+        <div>
+
+            <h3>Upcoming Appointment</h3>
+
+            <p>John Doe • Aug 12, 03:00 AM</p>
+
+        </div>
+
+        <strong>ETA 7m</strong>
+
+    </div>
+
+    <!-- Action Buttons -->
+
+    <div class="action-row">
+
+        <div class="action">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <p>Track Ambulance</p>
+
+        </div>
+
+        <div class="action">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <p>Call Driver</p>
+
+        </div>
+
+    </div>
+        <!-- Pickup -->
+
+    <div class="card">
+    <i class="fa-solid fa-location-dot"></i>
+    <h3>Pickup</h3>
+    <p id="pickupLocation">
+        Meenakshi College of Engineering,<br>
+        West K.K. Nagar,<br>
+        Chennai - 600078
+    </p>
+</div>
+    <!-- Destination -->
+
+    <div class="card info">
+
+        <div class="icon-circle">
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+
+        <div>
+            <h3>Destination</h3>
+            <p>City Hospital - Emergency</p>
+        </div>
+
+    </div>
+
+    <!-- Vehicle -->
+
+    <div class="card info">
+
+        <div class="icon-circle">
+            <i class="fa-solid fa-truck-medical"></i>
+        </div>
+
+        <div>
+            <h3>Vehicle</h3>
+            <p>Ambulance - KA-01-XY-1234</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+
+<div class="bottom-nav">
+
+    <a href="#" class="active">
+        <i class="fa-solid fa-truck-medical"></i>
+        <span>Ambulance</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-pills"></i>
+        <span>Medicine</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-user-doctor"></i>
+        <span>Doctor</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-kit-medical"></i>
+        <span>First Aid</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-car"></i>
+        <span>Driver</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-map"></i>
+        <span>Map</span>
+    </a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
